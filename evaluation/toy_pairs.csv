@@ -1,0 +1,21 @@
+submitted,source,related
+"Machine learning systems discover patterns by analyzing examples rather than following a rule for every situation.","Machine learning systems discover patterns by analyzing examples rather than following a rule for every situation.",1
+"A neural network learns by adjusting weights across multiple layers.","Training neural networks updates the parameters within layers to learn relationships.",1
+"Solar panels turn sunlight into electrical energy.","Photovoltaic devices convert incoming sunlight into electric power.",1
+"Students benefit from practical science experiments.","Hands-on scientific activities may improve student learning.",1
+"A strong wind rotates the blades of a turbine.","Wind energy drives turbine blades and powers an electrical generator.",1
+"Training data are used to fit a model's parameters.","Model weights are optimized on examples supplied during training.",1
+"The city experiences monsoon rainfall in the summer months.","Several coastal locations receive substantial seasonal rain during summer.",1
+"The experiment required careful measurement of temperature.","Researchers recorded the temperature accurately in each trial.",1
+"Computers are designed to process information.","Computer systems execute operations on digital data.",1
+"The sun provides renewable energy for solar panels.","Electricity can be produced from the sun using photovoltaic cells.",1
+"Solar panels generate electricity from sunlight.","Wind turbines convert moving air into electric energy.",0
+"The experiment used a controlled temperature.","A novel proposed experiment tested whether an economic policy would change inflation.",0
+"A student solved the algebra homework.","A biologist discovered a rare orchid in a protected rainforest.",0
+"The bicycle needs a new brake cable.","The telescope captured a distant galaxy through long exposure images.",0
+"Weather forecasts indicate a storm tomorrow.","The basketball team practiced passing and defending during training.",0
+"The patient received a routine dental checkup.","The software database requires scheduled backups and access control.",0
+"Farmers irrigate fields during dry weather.","An art historian documented medieval paintings in a restored gallery.",0
+"A train traveled between two cities overnight.","An astrophysicist analyzed light emitted by distant stars.",0
+"The college library has a large number of books.","The chemistry laboratory contains equipment for testing acidity.",0
+"The mathematics instructor presented a calculus lesson.","Bird migration patterns are affected by the changing seasons.",0

@@ -1,0 +1,3 @@
+Machine learning systems discover patterns by analyzing examples rather than following a rule for every possible situation. Training adjusts a model's parameters to reduce its prediction errors on the data it receives. Good evaluation uses separate examples that were not used to fit those parameters. This separation helps researchers judge whether a model generalizes beyond its training material.
+
+A neural network contains connected computational units that transform inputs through several layers. During training, numerical weights change in response to a loss function. The resulting system can recognize relationships that are difficult to express using fixed rules alone. Its results must still be tested on unseen data.

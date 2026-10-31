@@ -1,0 +1,3 @@
+Solar energy is captured from sunlight by photovoltaic cells that convert incoming light into electricity. Power generated during daylight can be stored in batteries for use after sunset. The efficiency of a solar installation depends on sunlight, panel orientation, temperature, and electrical losses.
+
+Wind turbines convert the kinetic energy of moving air into mechanical rotation and then electrical power. The energy output varies with wind speed and the design of the turbine. A combination of renewable energy sources can reduce dependence on any single resource.

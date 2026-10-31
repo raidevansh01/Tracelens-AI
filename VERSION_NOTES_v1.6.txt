@@ -1,0 +1,9 @@
+TraceLens AI v1.6
+
+- Combined Wikipedia + Tavily provider support with separate single-provider modes.
+- Provider-level retrieval reporting, graceful partial failures and URL deduplication.
+- Separate human review decisions for AI-writing windows, persistent SQLite migration.
+- AI-writing flagged analyzed-text share (NOT an AI-authorship percentage).
+- PDF source/review provenance and window reviewer notes.
+- 41 passing automated regression tests; 20 passing offline QA checks.
+- Experimental classifier accuracy unchanged; live APIs and Streamlit browser require local testing.

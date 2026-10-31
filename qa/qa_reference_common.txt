@@ -1,0 +1,3 @@
+Machine learning is a subset of artificial intelligence.
+
+This small reference text contains a common generic definition for a low-information overlap test. It is only a synthetic QA fixture.

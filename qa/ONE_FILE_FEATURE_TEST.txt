@@ -1,0 +1,24 @@
+TraceLens AI - Single Document Feature Verification
+
+TEST A - Exact copied passage
+Machine learning systems discover patterns by analyzing examples rather than following a rule for every possible situation. Training adjusts a model's parameters to reduce its prediction errors on the data it receives.
+
+TEST B - Exact copied passage from a different source
+Solar energy is captured from sunlight by photovoltaic cells that convert incoming light into electricity. Power generated during daylight can be stored in batteries for use after sunset.
+
+TEST C - Quotation and citation signal
+"A neural network contains connected computational units that transform inputs through several layers" (Patel, 2024). This is a demonstration citation and does not verify that Patel authored this text.
+
+TEST D - Possible semantic paraphrase
+A computer model improves by changing adjustable numerical settings whenever its predictions are wrong. Researchers must try the trained system on examples it has never encountered before to discover whether its learning is useful beyond the original examples.
+
+TEST E - Common phrase that should not inflate the main coverage
+Machine learning is a subset of artificial intelligence.
+
+TEST F - Original unrelated passage
+In my imaginary garden, cobalt umbrellas open only when the midnight clocks ring thirteen times. A quiet astronaut plants glass marbles under a violet staircase, and none of these details belongs to the machine-learning or renewable-energy sources.
+
+TEST G - Reference marker and reviewer context
+A second note includes the demonstration citation [2] and asks an examiner to inspect the source manually, rather than treat a numerical score as proof of misconduct.
+
+End of verification document. This sample deliberately mixes copied text, paraphrases, citations, common phrases, and unrelated writing. It is a test fixture, not a real student's assignment.

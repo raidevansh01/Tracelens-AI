@@ -1,0 +1,69 @@
+TRACELENS AI - WINDOWS QUICK START
+==================================
+
+PREREQUISITE
+Install 64-bit Python 3.11 (or 3.12) from https://www.python.org/downloads/
+Choose Add Python to PATH during installation.
+
+SETUP
+1. Extract TraceLens-AI-v1.8-SOURCE-RECALL-RESEARCH.zip into a new folder (e.g. Stage-10\TraceLens-AI).
+2. Open the TraceLens-AI folder.
+3. Click File Explorer's address bar, type powershell and press Enter.
+4. Copy and run EACH command below:
+
+   py -3.11 --version
+   py -3.11 -m venv .venv
+   .\.venv\Scripts\python.exe -m pip install --upgrade pip
+   .\.venv\Scripts\python.exe -m pip install -r requirements.txt
+   .\.venv\Scripts\python.exe -m pip install -r requirements-ai.txt
+   .\.venv\Scripts\python.exe -m pytest -q
+   .\.venv\Scripts\python.exe -m streamlit run app.py
+
+Use -3.12 instead of -3.11 if Python 3.12 is installed instead.
+Semantic AI installation is optional; you may skip the requirements-ai.txt line
+and turn Semantic AI off. It requires an initial download of pretrained weights.
+
+FIRST DEMO
+1. Browser: http://localhost:8501
+2. Sidebar > Reference Library > Load two example reference files
+3. Sidebar > Analyze > Upload samples/assignment_demo.txt
+4. Keep Local reference library on. Public web search off.
+5. Click Run analysis.
+6. Sidebar > Results & Review > inspect evidence and save a reviewer decision.
+7. Download evidence report PDF.
+8. Sidebar > Model Comparison > inspect lexical/semantic scores.
+
+OPTIONAL ONLINE SEARCH
+1. Get Tavily key from https://app.tavily.com/
+2. In PowerShell:
+   Copy-Item .env.example .env
+   notepad .env
+3. Set TAVILY_API_KEY=your-key inside .env; save file.
+4. Stop app with Ctrl+C and rerun the Streamlit launch command.
+5. In Analyze enable Public web search and check consent.
+
+NEXT RUN
+Double-click START_WINDOWS.bat in the project folder after setup.
+
+STOP APP
+Go to the PowerShell window and press Ctrl+C.
+
+TROUBLESHOOTING
+Read README.md for detailed instructions, exact features, limitations, and fixes.
+No search result is proof of plagiarism, and writing patterns do not prove AI authorship.
+
+TROUBLESHOOTING: If your demo shows 95.52% with THREE references,
+check whether assignment_demo.txt was also indexed as a reference.
+Remove the accidental duplicate via Reference Library, or use the optional
+'exclude text-identical local references' checkbox in Advanced settings.
+The original 44.78% demo comparison uses exactly TWO references and
+lexical-only offline mode. Never treat matched-word coverage as proven plagiarism.
+
+WIKIPEDIA SEARCH (FREE, NO KEY):
+1. In project folder, run: Copy-Item .env.example .env
+2. Run: notepad .env
+3. Add WIKIMEDIA_CONTACT=YOUR_OWN_EMAIL (or enter it in Analyze UI). Wikimedia requires client identification, not a secret key.
+4. Start application and under Public source search select Wikipedia (free, no key).
+5. Check external-sharing consent and analyze your text.
+6. Optional API smoke test: .\.venv\Scripts\python.exe qa\wiki_live_check.py
+Wikipedia searches Wikipedia articles only, not the entire public web.

@@ -1,0 +1,9 @@
+A Short Assignment on Intelligent Systems
+
+Machine learning systems discover patterns by analyzing examples rather than following a rule for every possible situation. Training adjusts a model's parameters to reduce its prediction errors on the data it receives.
+
+Researchers often train computational systems with examples and then test whether the learned relationships work on unfamiliar cases. A model can memorize its examples while performing badly on new situations, so a separate evaluation set matters.
+
+Solar energy is captured from sunlight by photovoltaic cells that convert incoming light into electricity. Power generated during daylight can be stored in batteries for use after sunset.
+
+I think computational models should be evaluated carefully before they are trusted to guide important decisions. Reliability depends on the data used for testing as well as the nature of the task.

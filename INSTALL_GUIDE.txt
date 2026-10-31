@@ -1,0 +1,29 @@
+TraceLens AI v1.8.1 / Stage-10 — v2 Streamlit Result Display Fix
+
+Why: The v2 candidates were saved under ai_comparator_analysis, but the main
+results table always showed ai_pattern_analysis (old stylometric model).
+
+1. Keep your existing Stage-10 project as a backup.
+2. Extract the ZIP contents directly into C:\Code\Plagrism\Stage-10\TraceLens-AI
+   (PATCH_V2_UI.py should sit beside app.py; core/v2_presentation.py should be under core).
+3. Stop Streamlit (Ctrl+C).
+4. In PowerShell:
+   cd C:\Code\Plagrism\Stage-10\TraceLens-AI
+   .\.venv\Scripts\python.exe promote_v2_candidate.py --method ngram --install
+   .\.venv\Scripts\python.exe PATCH_V2_UI.py
+   .\.venv\Scripts\python.exe -m pytest -q tests\test_v2_presentation.py
+   .\.venv\Scripts\python.exe -m streamlit run app.py
+5. In Analyze, upload TEST_AI_GENERATED.txt, enable experimental AI-writing
+   analysis, and CLICK Run analysis. Then open Results & Review and select the
+   NEW analysis. The v2 n-gram table should appear before Legacy.
+6. For the previously tested 577-word sample, expect scores close to
+   0.9385, 0.8967, 0.8662, threshold 0.6024, flags 3/3 if the same v2
+   model was installed. Previous saved analyses do not recalculate.
+
+Does not change the trained models, original classifier, stored SQLite data,
+API keys or plagiarism detection algorithms. Existing legacy reviewer records
+remain intact and separately labeled. This patch does not yet create a distinct
+human-review table for v2 candidate windows.
+
+The v2 AI-writing classifier remains experimental. A flag does not prove AI
+use, and the corpus-level benchmark does not establish across-domain accuracy.

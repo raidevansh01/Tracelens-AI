@@ -1,0 +1,51 @@
+.venv/
+__pycache__/
+.pytest_cache/
+.env
+*.py[cod]
+storage/*
+!storage/.gitkeep
+.DS_Store
+# Secrets and configuration
+.env
+.env.*
+!.env.example
+.streamlit/secrets.toml
+*.pem
+*.key
+
+# Python environment
+.venv/
+venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Models and training data
+datasets/
+storage/
+*.joblib
+*.pkl
+*.safetensors
+*.pth
+*.pt
+
+# Database
+*.sqlite
+*.sqlite3
+*.db
+*.sqlite3-*
+
+# Private uploads and generated outputs
+uploads/
+qa/output/
+evaluation_backup/
+evaluation_backups/
+*.log
+
+# Local temporary files
+.DS_Store
+Thumbs.db
+*.tmp
